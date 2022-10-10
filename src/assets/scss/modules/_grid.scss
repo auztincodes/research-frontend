@@ -1,0 +1,43 @@
+.grid {
+	display: grid;
+	&__layout {
+		@extend .grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: 1rem;
+		@include grid-generator(12);
+		&--10 {
+			grid-template-columns: repeat(10, 1fr);
+			@include grid-generator(10);
+		}
+		@for $i from 1 through 10 {
+			&.gap-#{$i} {
+				grid-gap: #{$i}rem !important;
+			}
+		}
+	}
+
+
+	&--no-gutter {
+		grid-gap: 0;
+	}
+}
+
+.container {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 1rem;
+	width: 100%;
+	position: relative;
+	@include query(desktop, max){
+		padding: 0 4rem;
+	}
+	@include query(tablet, max){
+		padding: 0 2rem;
+	}
+	@include query(mobile, max){
+		padding: 0 1rem;
+	}
+	&--lg {
+		max-width: 1300px;
+	}
+}

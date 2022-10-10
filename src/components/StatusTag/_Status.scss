@@ -1,0 +1,63 @@
+.table__td__status {
+	.status{
+		box-sizing: border-box;
+		border-radius: 4px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 7px 8px;
+		width: fit-content;
+		.white__circle {
+			width: 12px;
+			height: 12px;
+			background-color: #fff;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 4px;
+			.pin {
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+			}
+		}
+		.text {
+			font-family: Karla;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 12px;
+		}
+	}
+	.status_active {
+		background: #eafbf1;
+		border: 1px solid #c0f2d4;
+			.pin {
+				background: #1e944d;
+			}
+		.text {
+			color: #166a37;
+		}
+	}
+	.status_pending {
+		background: #fff8e5;
+		border: 1px solid #ffde80;
+			.pin {
+				background: #b38400;
+			}
+		.text {
+			color: #805e00;
+		}
+	}
+	.status_inactive {
+		background: #FCE9E9;
+    	border: 1px solid #F6BCBC;
+			.pin {
+				background: #9D1515;
+			}
+		.text {
+			color: #700F0F;
+		}
+	}
+}

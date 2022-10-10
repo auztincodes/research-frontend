@@ -1,0 +1,73 @@
+.alert {
+	padding: 18px;
+	border-radius: 4px;
+	display: flex;
+	font-size: 15px;
+	width: 778px;
+	max-width: 85%;
+	margin: 0 auto;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	&--global {
+		position: fixed;
+		top: 20px;
+		left: 0;
+		right: 0;
+		z-index: 100;
+	}
+	&--caution {
+		background: #fdfdea;
+	}
+	&--info {
+		background: #ebf5ff;
+	}
+	&--success {
+		background: #f2faf7;
+	}
+	&--error {
+		background: #fdf1f2;
+	}
+	&__container {
+		&--caution {
+			color: #8b5d3b;
+		}
+		&--info {
+			color: #047eff;
+		}
+		&--success {
+			color: #36ca8b;
+		}
+		&--error {
+			color: #8b5d3b;
+		}
+	}
+	&__title {
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+		display: inline-block;
+		text-transform: capitalize;
+	}
+	&__icon {
+		margin-right: 1rem;
+	}
+	&__cta {
+		align-self: center;
+	}
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+	transition: all 0.3s ease-in;
+}
+.slide-fade-leave-active {
+	transition: all 0.3s ease-in;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+	transform: translateY(10px);
+	opacity: 0;
+}

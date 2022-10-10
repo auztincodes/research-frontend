@@ -1,0 +1,70 @@
+* {
+	font-family: 'Karla', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+  }
+  
+body {
+	font-size: $base-font-size;
+	color: $grey-text;
+	font-family: 'Karla', sans-serif;
+	:focus {
+		outline: none;
+	}
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $grey-text;
+	font-weight: bold;
+}
+
+p,
+ul,
+li {
+	margin: 0;
+	font-size: 15px;
+}
+
+a {
+	color: $green-text;
+}
+
+hr {
+	margin-bottom: 1rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}

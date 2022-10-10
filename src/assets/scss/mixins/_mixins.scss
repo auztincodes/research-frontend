@@ -1,0 +1,93 @@
+/* 
+ * Adds hover and focus styling  
+ */
+ @mixin hocus {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+/*
+ * Generates classes for a grid of columns.
+ * The result will be .col-[col]-[total-columns] E.g. .col-xs-6-12
+ *
+ * @param {int}		$grid-columns	Amount of columns
+ */
+@mixin grid-generator($grid-columns) {
+	@for $i from 1 through $grid-columns {
+		.col-#{$i}-#{$grid-columns} {
+			grid-column: span $i;
+		}
+	}
+	// add media queries mixins for mobile
+}
+
+// color theme utility classes
+@mixin color-modifiers($attribute) {
+	@each $name, $color in $colors {
+		&-#{$name} {
+			#{$attribute}: $color;
+		}
+	}
+}
+
+// media queries mixins
+@mixin query($breakpoint, $type: max) {
+	// If $breakpoint is a key that exists in
+	// $breakpoints, get and use the value
+	@if map-has-key($breakpoints, $breakpoint) {
+		$breakpoint: map-get($breakpoints, $breakpoint);
+	}
+
+	@media screen and (#{$type}-width: #{$breakpoint}) {
+		@content;
+	}
+}
+
+@mixin mq($width, $type: min) {
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+@mixin truncate($truncation-boundary) {
+	max-width: $truncation-boundary;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@mixin flexrow {
+	@include flex;
+	flex-direction: row;
+  }
+  
+  @mixin flexcol {
+	@include flex;
+	flex-direction: column;
+  }
+  
+  @mixin flex {
+	display: flex;
+  }
+  @mixin flex_c {
+	@include flex;
+		justify-content: center;
+		align-items: center;
+  }
+  @mixin flex__sb {
+    @include flex;
+    justify-content: space-between;
+} 

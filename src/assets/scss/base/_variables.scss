@@ -1,0 +1,34 @@
+// fonts
+$base-font-size: 100%;
+
+//colors
+$primary: #077dff;
+$secondary: #654aff;
+$accent: #0080ff;
+$primary-gradient: linear-gradient(-90deg, $secondary 0%, $accent 100%);
+$primary-gradient-reverse: linear-gradient(-90deg, $accent 0%, $secondary 100%);
+
+$green-text: #36ca8b;
+$default-text: #1c2f46;
+$primary-text: #077dff;
+$grey-text: #333758;
+$red-text: #fe6159;
+$alt-text: #85879b;
+
+$default-border-color: $grey-text;
+
+$colors: (
+	success: $green-text,
+	error: $red-text,
+	primary: $primary-text,
+	accent: $accent
+);
+// sizes
+$max-width: 1200px;
+
+// media query breakpoints
+$breakpoints: (
+	'mobile': 480px,
+	'tablet': 769px,
+	'desktop': 1024px
+) !default;

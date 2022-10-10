@@ -1,0 +1,69 @@
+.card {
+  width: 100%;
+  padding: 24.5px 24.5px 0;
+  transition: 0.3s;
+  // padding-top: 24.5px;
+
+  &:hover {
+    background-color: #EDEDED;
+    cursor: pointer;
+  }
+
+  &-wrapper {
+    padding-bottom: 24.5px;
+  }
+  &:not(:last-child){
+    .card-wrapper {
+      border-bottom: 1px solid #EAEBEB;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  color: #202F44;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  transition: 0.3s;
+
+  &:hover {
+    color: #3B48F7;
+  }
+}
+.content,
+.quote {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #333758;
+  margin-bottom: 16px;
+  display: block;
+}
+.gap {
+  margin-right: 10px;
+}
+.quote {
+  font-style: italic;
+}
+.icon:hover{
+  cursor: pointer;
+}
+.article-link{
+  color: #989AAA;
+   p{
+    max-width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &:hover {
+    color: #3B48F7;
+    text-decoration-line: underline;
+  }
+}

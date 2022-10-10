@@ -1,0 +1,21 @@
+
+.tag {
+	display: flex;
+	flex: 0 0 auto;
+	width: auto;
+	max-width: none;
+	width: auto;
+	align-items: center;
+	padding: 6px 12px;
+	border-radius: 6px;
+	border: solid 1px #dadce1;
+	font-family: 'Karla', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: -0.12px;
+	color: rgba(51, 55, 88, 0.6);
+	&-close {
+		padding-left: 19px;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,43 @@
+.dashboard-header {
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.user-details {
+  margin-right: 12px;
+  text-transform: capitalize;
+}
+.user-details__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3A434B;
+  text-align: right;
+  
+}
+.user-details__role {
+  font-size: 12px;
+  line-height: 16px;
+  color: #81909D;
+  font-weight: 400;
+  text-align: right;
+}
+.topCircle {
+  width: 32px;
+  height: 32px;
+  background: #D7DCE0;
+  border: 2px solid #F4F5F6;
+  box-sizing: border-box;
+  border-radius: 18px;
+  margin-right: 8.5px;
+  display: flex;
+}
+.user__initials {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #3A434B;
+  margin: auto;
+}

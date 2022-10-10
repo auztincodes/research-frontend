@@ -1,0 +1,24 @@
+.input-tag {
+  background: #EAEBEB;
+  border-radius: 12px;
+  line-height: 17px;
+  font-size: 15px;
+  width: fit-content;
+  padding: 3px 11px 3px 8px;
+  margin: 0 2px 2px 0;
+}
+
+.tag-name {
+  margin-right: 7.5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.tagBtn {
+  background: none;
+  margin: none;
+  border: none;
+  cursor: pointer;
+}
